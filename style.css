@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+p{
+    text-align: justify;
+    width: 50%;
+    margin-left: 25%;
+}
+.switch{
+    margin-left: 25%;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 2px solid rgb(94, 156, 207);
+    display: flex;
+    border-radius: 35px;   
+}
+.checkbox{
+    display: none;
+}
+.slider{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(94, 156, 207);
+    transition: transform 0.3s ease; 
+
+
+}
+input:checked + .slider {
+    transform: translateX(20px); 
+}
